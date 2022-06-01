@@ -90,3 +90,18 @@ h1, h2{
     "tercerh2 tercerimg"
     "tercerp tercerimg";
 }
+body{
+    background-image: linear-gradient(to bottom, rgb(127, 219, 188) , rgb(236, 236, 52) , rgb(224, 170, 179));
+}
+.primerimg:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+}
+.segundaimg:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+}
+.tercerimg:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+}
