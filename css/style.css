@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(210, 248, 248);
+}
+ul{
+    font-size: 20px;
+}
+h2{
+    color: rgb(23, 66, 12);
+    font-size: 50px;
+    margin: 20px;
+}
+h1{
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 80px;
+}
+header img{
+    display: block;
+    margin: 0 auto;
+}
+p{
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    margin: 20px;
+
+}
+.imagenChica, .galery{
+    display: block;
+    margin: 0 auto;
+}
+h1, h2{
+    font-family: 'Koulen', cursive;
+}
+.aDiferente, footer{
+    padding: 20px;
+    font-size: 25px;
+}
+.primerh2{
+    grid-area: primerh2;
+}
+.primerp{
+    grid-area: primerp;
+}
+.primerimg{
+    grid-area: primerimg;
+    margin: 0 auto;
+    padding: 70px;
+}
+.segundoh2{
+    grid-area: segundoh2;
+}
+.segundop{
+    grid-area: segundop;
+}
+.segundaimg{
+    grid-area: segundaimg;
+    margin: 0 auto;
+    padding: 70px;
+}
+.tercerh2{
+    grid-area: tercerh2;
+}
+.tercerp{
+    grid-area: tercerp;
+}
+.tercerimg{
+    grid-area: tercerimg;
+    margin: 0 auto;
+    padding: 70px;
+}
+.articulouno{
+    display: grid;
+    grid-template-areas: 
+    "primerh2 primerimg" 
+    "primerp primerimg";
+}
+.articulodos{
+    display: grid;
+    grid-template-areas: 
+    "segundaimg segundoh2"
+    "segundaimg segundop";
+}
+.articulotres{
+    display: grid;
+    grid-template-areas: 
+    "tercerh2 tercerimg"
+    "tercerp tercerimg";
+}
