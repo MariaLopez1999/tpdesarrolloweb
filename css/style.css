@@ -21,11 +21,11 @@ footer{
 }
 h2{
     color: rgb(10, 0, 7);
-    font-size: 50px;
+    font-size: 60px;
     margin: 20px;
 }
 h1{
-    color: rgb(83, 144, 224);
+    color: rgb(0, 4, 8);
     padding: 10px;
     text-align: center;
     font-size: 90px;
@@ -41,10 +41,7 @@ p{
     margin: 20px;
 
 }
-.imagenChica, .galery{
-    display: block;
-    margin: 0 auto;
-}
+
 h1, h2{
     font-family: 'Koulen', cursive;
 }
@@ -105,7 +102,7 @@ h1, h2{
     "tercerp tercerimg";
 }
 body{
-    background-image: linear-gradient(to bottom, rgb(152, 192, 243) , rgb(160, 223, 181));
+    background-image: linear-gradient(to bottom, rgb(212, 253, 192) , rgb(226, 250, 169));
 }
 
 .primerimg:hover{
@@ -122,24 +119,86 @@ body{
 }
 .imagenbanner, .banner{
     width: 100%;
-    height: 400px;
+    height: 620px;
     background-size: 100% 100%;
     position: relative;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    justify-content: center;
+    
 }
 .titulo{
     z-index: 1;
     width: 100%;
-    max-width: 550px;
+    max-width: 800px;
     text-align: center;
     position: absolute;
-
+     
 }
 .menu{
-    background-color: rgb(112, 179, 255);
+    background-color: rgb(0, 3, 7);
     width: 2000px;
     height: 70px;
+    margin: 0 auto
 }
-
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.img10{
+    grid-area: img10;
+}
+.img11{
+    grid-area: img11;
+}
+.img12{
+    grid-area: img12;
+}
+.img13{
+    grid-area: img13;
+}
+.img14{
+    grid-area: img14;
+}
+.img15{
+    grid-area: img15;
+}
+.img16{
+    grid-area: img16;
+}
+.galery{
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+    "img9 img10 img11 img12"
+    "img13 img14 img15 img16";
+}
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16{
+    padding: 5px;
+}
+body{
+    overflow-x: hidden;
+}
