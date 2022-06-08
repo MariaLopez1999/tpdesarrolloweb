@@ -19,12 +19,12 @@ a{
 footer{
     display: inline-block;
 }
-h2{
+.tipoh2{
     color: rgb(10, 0, 7);
     font-size: 60px;
     margin: 20px;
 }
-h1{
+.tipoh1{
     color: rgb(0, 4, 8);
     padding: 10px;
     text-align: center;
@@ -42,7 +42,7 @@ p{
 
 }
 
-h1, h2{
+.tipoh1, .tipoh2{
     font-family: 'Koulen', cursive;
 }
 .aDiferente, footer{
@@ -134,12 +134,6 @@ body{
     position: absolute;
      
 }
-.menu{
-    background-color: rgb(0, 3, 7);
-    width: 2000px;
-    height: 70px;
-    margin: 0 auto
-}
 .img1{
     grid-area: img1;
 }
@@ -201,4 +195,85 @@ body{
 }
 body{
     overflow-x: hidden;
+}
+.n-navbar{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 120px;
+    height: 70px;
+}
+.nn-navbar{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 30px;
+}
+.link-n{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.boton{
+    border-color: white;
+}
+@media only screen and (min-width: 990px) {
+    .boton {
+        display: none !important;
+     }
+    }
+    
+@media only screen and (max-width: 991px) {
+        .boton {
+            display: block !important;
+        }
+    }
+
+@media screen and (max-width: 768px) {
+        .articulo{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-areas: 
+            "primerh2"
+            "primerp"
+            "primerimg"
+            "segundoh2"
+            "segundop"
+            "segundaimg"
+            "tercerh2"
+            "tercerp"
+            "tercerimg";
+        }
+    }    
+@media screen and (max-width: 768px) {
+    .galery{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        "img7 img8"
+        "img9 img10"
+        "img11 img12"
+        "img13 img14"
+        "img15 img16";
+    }
+}
+@media screen and (max-width: 320px) {
+    .galery{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8"
+        "img9"
+        "img10"
+        "img11"
+        "img12"
+        "img13"
+        "img14"
+        "img15"
+        "img16";
+    }
 }
